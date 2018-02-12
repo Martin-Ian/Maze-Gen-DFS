@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\ian martin\desktop\coding\purple alpaca coding\maze_gen_dfs\maze_gen_dfs\main.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\ian martin\desktop\coding\purple alpaca coding\maze_gen_dfs\maze_gen_dfs\main.cpp(110): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Maze_Gen_DFS.vcxproj -> C:\Users\Ian Martin\Desktop\Coding\Purple Alpaca Coding\Maze_Gen_DFS\Debug\Maze_Gen_DFS.exe
