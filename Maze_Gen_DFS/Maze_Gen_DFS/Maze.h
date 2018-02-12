@@ -59,7 +59,7 @@ public:
 		{
 			for (int w = 0; w < _width; w++)
 			{
-				cout << get_value(w, h);
+				cout << get_value(h, w);
 			}
 			cout << endl;
 		}
@@ -67,12 +67,12 @@ public:
 
 	char get_value(int _width, int _height)
 	{
-		return the_maze[_height][_width]._val;
+		return the_maze[_width][_height]._val;
 	}
 
 	void set_value(char value, int _width, int _height)
 	{
-		the_maze[_height][_width]._val = value;
+		the_maze[_width][_height]._val = value;
 	}
 
 	Cell* get_cell(int _width, int _height)

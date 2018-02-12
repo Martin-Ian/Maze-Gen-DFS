@@ -60,7 +60,7 @@ int main()
 
 	Cell* temp = the_maze.get_cell(1, 1);
 	temp->_val = 'o';
-	temp = the_maze.get_cell(stoi(width) - 2, stoi(height) - 2);
+	temp = the_maze.get_cell(stoi(height) - 2, stoi(width) - 2);
 	temp->_val = '*';
 	the_maze.showMaze();
 	
@@ -81,11 +81,11 @@ bool getNeighbors(Maze* the_maze, int _x, int _y, int width, int height)
 	{
 		the_maze->get_cell(_x, _y)->neighbors.at(1) = true;
 	}
-	if (_x + 2 < width && the_maze->get_cell(_x + 2, _y)->_visited == false)
+	if (_x + 2 < height && the_maze->get_cell(_x + 2, _y)->_visited == false)
 	{
 		the_maze->get_cell(_x, _y)->neighbors.at(2) = true;
 	}
-	if (_y + 2 < height && the_maze->get_cell(_x, _y + 2)->_visited == false)
+	if (_y + 2 < width && the_maze->get_cell(_x, _y + 2)->_visited == false)
 	{
 		the_maze->get_cell(_x, _y)->neighbors.at(3) = true;
 	}
